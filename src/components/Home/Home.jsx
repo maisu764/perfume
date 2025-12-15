@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
-import Hero from '../Hero/Hero'
+
 
 const Home = () => {
   return (
     <div>
-        <Navbar/>
-        <Hero/>
+ <h1 className='bg-red-300'>hello</h1>
+
+ <Navbar />
     </div>
   )
 }
