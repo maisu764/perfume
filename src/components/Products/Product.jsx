@@ -13,7 +13,7 @@ const Products = () => {
     const renderProducts = ProductList.map(product => {
         return (
             // Card
-            <div className='bg-zinc-100 p-5 border-1 border-zinc-300 rounded-lg'>
+            <div className='bg-zinc-100 p-3 border-1 border-zinc-300 rounded-lg'>
                 <div className='flex justify-between items-center'>
                     <button className='text-3xl text-zinc-300'>
                         <IoMdHeart />
@@ -36,7 +36,7 @@ const Products = () => {
                     <div className='mt-1 mb-5'>
                         <span className='text-red-600 font-semibold'>${product.price}</span>
                         <div>
-                            <button className='bg-indigo-600 text-white text-lg cursor-pointer py-2 w-full rounded-lg active:bg-indigo-700'>
+                            <button className='bg-indigo-600 text-white text-lg cursor-pointer py-2 w-full rounded-lg active:bg-indigo-700 mt-10'>
                                 Add to Cart
                             </button>
                         </div>
