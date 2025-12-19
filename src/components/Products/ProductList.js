@@ -17,31 +17,31 @@ const product = [
 {
 
     id: 5,
-    name: 'Velloro',
+    name: 'Blue Channel',
     image: pr5,
     price: 43.50,
     oldPrice: 45,
-    onSale: true,
-    newArrival: false,
-    category: 'Women',
+    onSale: false,
+    newArrival: true,
+    category: 'Men',
 
 },
 {
 
     id: 6,
-    name: 'Velloro',
+    name: 'Arvani',
     image: pr6,
     price: 70.32,
     oldPrice: 45,
     onSale: true,
     newArrival: false,
-    category: 'Women',
+    category: 'Unisex',
 
 },
 {
 
     id: 13,
-    name: 'Velloro',
+    name: 'Maidan',
     image: pr13,
     price: 20.00,
     oldPrice: 45,
@@ -54,7 +54,7 @@ const product = [
 {
 
     id: 15,
-    name: 'Velloro',
+    name: 'Maisu',
     image: pr15,
     price: 30.99,
     oldPrice: 45,
@@ -80,10 +80,10 @@ const product = [
     id: 17,
     name: 'Velloro',
     image: pr17,
-    price: 49.99,
+    price: null,
     oldPrice: 45,
-    onSale: true,
-    newArrival: false,
+    onSale: false,
+    newArrival: true,
     category: 'Women',
 
 },
@@ -106,9 +106,9 @@ const product = [
     image: pr19,
     price: 35,
     oldPrice: 45,
-    onSale: true,
-    newArrival: false,
-    category: 'Women',
+    onSale: false,
+    newArrival: true,
+    category: 'Men',
 
 },
 

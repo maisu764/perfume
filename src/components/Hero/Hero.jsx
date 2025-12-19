@@ -21,7 +21,7 @@ const Hero = () => {
   }
 
   return (
-    <section className="pt-2">
+    <section className="pt-2 mt-[10vh]">
       {/* Center container with max width and px-10 */}
       <div className="max-w-[1200px] mx-auto px-10">
         <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-lg">
@@ -30,7 +30,7 @@ const Hero = () => {
           <img
             src={banners[current]}
             alt="Banner"
-            className="w-full h-full object-contain transition-all duration-700"
+            className="w-full h-full object-contain transition-all duration-700 "
           />
 
           {/* Left Arrow */}

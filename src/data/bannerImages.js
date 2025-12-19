@@ -1,9 +1,13 @@
-import banner1 from '../assets/banner1.jpeg'
-import banner2 from '../assets/banner2.jpeg'
-import banner3 from '../assets/banner3.jpeg'
-import banner4 from '../assets/banner4.jpeg'
-import banner5 from '../assets/banner5.jpeg'
 
-const banners = [banner1, banner2, banner3, banner4, banner5]
+import banner11 from '../assets/banner11.jpeg'
+import banner12 from '../assets/banner12.jpeg'
+import banner13 from '../assets/banner13.jpeg'
+import banner14 from '../assets/banner14.jpeg'
+import banner15 from '../assets/banner15.jpeg'
+
+
+
+
+const banners = [banner11, banner12, banner13, banner14, banner15]
 
 export default banners
