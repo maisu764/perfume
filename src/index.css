@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 @import "tailwindcss";
 
 .scroll::-webkit-scrollbar{
 
     display: none;
 }
+=======
+@import "tailwindcss";
+>>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81

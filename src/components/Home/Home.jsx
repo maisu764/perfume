@@ -2,16 +2,20 @@ import React, { useState, useEffect } from 'react'
 import Navbar from '../Navbar/Navbar'
 import Hero from '../Hero/Hero'
 import Product from '../Products/Product'
+<<<<<<< HEAD
 import Cart from '../Cart/Cart'
 import Wishlist from '../Wishlist/Wishlist'
 import OrderSummary from '../OrderSummary/OrderSummary'
 import OrderPlace from '../OrderPlace/OrderPlace'
+=======
+>>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
 
 
 
 const Home = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
+<<<<<<< HEAD
   const [isScrolled, setIsScrolled] = useState(false);
   const [activePanel, setActivePanel] = useState(null);
   const [orderSummary, setOrderSummary] = useState(false);
@@ -36,12 +40,20 @@ const Home = () => {
   useEffect(() => {
 
     const changeNavbar = () => {
+=======
+   const [isScrolled, setIsScrolled] = useState (false)
+
+useEffect(()=>{
+
+    const changeNavbar =() =>{
+>>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
       setIsScrolled(window.scrollY > 10)
 
     }
 
     window.addEventListener('scroll', changeNavbar);
 
+<<<<<<< HEAD
   }, []);
 
   // Save Items to Local Storage
@@ -205,6 +217,27 @@ const Home = () => {
 
 
     </div>
+=======
+}, [])
+
+  const handleScroll = () =>{
+    const section = document.getElementById('product-section');
+
+    if(section){
+      section.scrollIntoView({behavior:  'smooth'});
+    }
+  }
+
+  return (
+   <div className="bg-white min-h-screen">
+  <Navbar 
+  handleScroll={handleScroll} 
+  setSearchTerm={setSearchTerm}
+  isScrolled={isScrolled} />
+  <Hero />
+  <Product searchTerm={searchTerm} />
+</div>
+>>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
 
   )
 }

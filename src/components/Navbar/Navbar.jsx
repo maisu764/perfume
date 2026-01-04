@@ -1,12 +1,22 @@
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import maisu from "../../../public/maisu.png";
+=======
+import maisu from "../../assets/maisu.png";
+>>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
 import { IoMdHeart } from "react-icons/io";
 import { RiShoppingBasketLine } from "react-icons/ri";
 import { IoIosSearch } from "react-icons/io";
 
+<<<<<<< HEAD
 const Navbar = ({ handleScroll, setSearchTerm, isScrolled, handlePanel, totalItems, wishlist }) => {
 
 
+=======
+const Navbar = ({ handleScroll, setSearchTerm, isScrolled }) => {
+
+   
+>>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
 
     return (
         <header className={`bg-white fixed top-0 left-0 right-0 z-50 ${isScrolled ? 'shadow-lg' : ''}`}>
@@ -37,6 +47,7 @@ const Navbar = ({ handleScroll, setSearchTerm, isScrolled, handlePanel, totalIte
                         </button>
                     </div>
 
+<<<<<<< HEAD
                     <button className="text-[1.7rem] text-zinc-800 relative cursor-pointer">
                         <IoMdHeart className="text-red-600 text-3xl cursor-pointer" onClick={() => handlePanel('wishlist')} />
                         {
@@ -59,6 +70,15 @@ const Navbar = ({ handleScroll, setSearchTerm, isScrolled, handlePanel, totalIte
 
                        
                     </button>
+=======
+                    <a href="#">
+                        <IoMdHeart className="text-red-600 text-2xl" />
+                    </a>
+
+                    <a href="#">
+                        <RiShoppingBasketLine className="text-indigo-600 text-2xl" />
+                    </a>
+>>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
                 </div>
             </nav>
         </header>

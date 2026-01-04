@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react'
+<<<<<<< HEAD
 import banners from '../data/bannerImages' // your array of images
+=======
+import banners from '../../data/bannerImages' // your array of images
+>>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
 
 const Hero = () => {
   const [current, setCurrent] = useState(0)
