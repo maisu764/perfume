@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import ProductList from './ProductList';
 import { IoMdHeart } from 'react-icons/io';
 
-<<<<<<< HEAD
 const Products = ({ searchTerm, addToCart, addToWishlist, wishlist }) => {
-=======
-const Products = ({ searchTerm }) => {
->>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
   const categories = ['All', 'Men', 'Women', 'Unisex', 'On Sale', 'New Arrival'];
   const [activeTab, setActiveTab] = useState('All');
 
@@ -48,41 +44,29 @@ const Products = ({ searchTerm }) => {
         ) : (
           <div className="grid grid-cols-4 gap-9">
             {filteredItems.map(product => (
-<<<<<<< HEAD
-              <div key={product.id}
-                className="bg-zinc-100 p-3  border-zinc-300 rounded-lg flex flex-col min-h-[350px]
-                transition-all duration-300 ease-out
-      hover:-translate-y-2 hover:shadow-xl"
-              >
-                {/* Card Header */}
-                <div className="flex justify-between items-center">
-                  <button className={`text-3xl cursor-pointer
-                  ${wishlist.some(item => item.id === product.id) ?
-                      'text-red-600' : 'text-zinc-300 hover:text-red-500'
-                    }`}
-                    onClick={() => addToWishlist(product)}>
-=======
               <div
                 key={product.id}
-                className="bg-zinc-100 p-3 border-6 border-zinc-300 rounded-lg flex flex-col min-h-[420px]"
+                className="bg-zinc-100 p-3 border-zinc-300 rounded-lg flex flex-col min-h-[350px] 
+                  transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl"
               >
                 {/* Card Header */}
                 <div className="flex justify-between items-center">
-                  <button className="text-3xl text-zinc-300">
->>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
+                  <button
+                    className={`text-3xl cursor-pointer ${
+                      wishlist.some(item => item.id === product.id)
+                        ? 'text-red-600'
+                        : 'text-zinc-300 hover:text-red-500'
+                    }`}
+                    onClick={() => addToWishlist(product)}
+                  >
                     <IoMdHeart />
                   </button>
 
                   {(product.onSale || product.newArrival) && (
                     <span
-<<<<<<< HEAD
-                      className={`px-3 py-1 text-white ${product.onSale ? 'bg-red-600' : 'bg-green-600'
-                        }`}
-=======
                       className={`px-3 py-1 text-white ${
                         product.onSale ? 'bg-red-600' : 'bg-green-600'
                       }`}
->>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
                     >
                       {product.onSale ? 'Sale' : 'New'}
                     </span>
@@ -96,37 +80,23 @@ const Products = ({ searchTerm }) => {
 
                 {/* Details */}
                 <div className="text-center mt-6 flex flex-col flex-grow">
-<<<<<<< HEAD
-                  <h3 className="text-[1.4rem] font-semibold text-black">
-=======
-                  <h3 className="text-[1.4rem] font-semibold text-indigo-600">
->>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
-                    {product.name}
-                  </h3>
+                  <h3 className="text-[1.4rem] font-semibold text-black">{product.name}</h3>
 
                   <div className="mt-2 mb-4">
                     {product.onSale && (
                       <span className="text-zinc-600 font-semibold line-through mr-4">
-<<<<<<< HEAD
                         ${Number(product.oldPrice).toFixed(2)}
                       </span>
                     )}
-                    <span className="text-red-600 font-semibold">${Number(product.price).toFixed(2)}</span>
+                    <span className="text-red-600 font-semibold">
+                      ${Number(product.price).toFixed(2)}
+                    </span>
                   </div>
 
-                  {/* Button fixed to bottom */}
-                  <button className="mt-auto bg-indigo-600 text-white text-lg py-2 w-full rounded-lg active:bg-indigo-700 cursor-pointer"
-                    onClick={() => addToCart(product)}>
-=======
-                        ${product.oldPrice}
-                      </span>
-                    )}
-                    <span className="text-red-600 font-semibold">${product.price}</span>
-                  </div>
-
-                  {/* Button fixed to bottom */}
-                  <button className="mt-auto bg-indigo-600 text-white text-lg py-2 w-full rounded-lg active:bg-indigo-700 cursor-pointer">
->>>>>>> a652b11fa0d6a3e443a56bd6d7d53eeb6c490a81
+                  <button
+                    className="mt-auto bg-indigo-600 text-white text-lg py-2 w-full rounded-lg active:bg-indigo-700 cursor-pointer"
+                    onClick={() => addToCart(product)}
+                  >
                     Add to Cart
                   </button>
                 </div>
